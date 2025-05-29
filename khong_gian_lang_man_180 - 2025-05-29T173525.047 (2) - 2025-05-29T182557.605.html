@@ -30,7 +30,8 @@
         0 0 8px #ff88cc,
         0 0 15px #ff66bb;
       transform-origin: center;
-      animation: dropStraight 10s linear forwards;
+      animation: dropStraight 12s ease-in-out forwards;
+
     }
 
     @keyframes dropStraight {
@@ -129,7 +130,7 @@
     setInterval(() => {
       const msg = messages[Math.floor(Math.random() * messages.length)];
       createFlyingText(msg);
-    }, 400);
+    }, 600);
 
     setInterval(createHeart, 250);
   </script>
